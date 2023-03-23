@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Bài tập về position</title>
+   <style>
+    .header{
+    background: #E25300;
+    position: sticky;   
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    padding: 12px 10px;
+    border-radius: 8px;
+
+}
+.header ul{
+    list-style-type: none;
+    border-radius: 50%;
+    margin: 0;
+}
+.header ul li{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+.box{
+    position: relative;
+    margin-top: 50px;
+    background: #CCCCCC;
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+}
+.child{
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    font-size: 12;
+    color: #fff;
+    border-radius: 7px;
+    line-height: 60px;
+
+}
+.box-1{
+    background: #D44E00;
+    left: 0;
+    top: 0;
+
+}
+.box-2{
+    background: #D40000;
+    top: 20px;
+    right: 20px;
+}
+.box-3{
+    background: #369400;
+    bottom: 35px;
+    right: 35px;
+}
+.box-4{
+    background: #2A00D4;
+    bottom: 60px;
+    left: 50px;
+}
+.content{
+    color: #fff;
+    background: #0065BC;
+    border-radius: 8px;
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 80px 30px;
+    position: relative;
+
+}
+.content .para{
+    position: relative;
+    z-index: 1;
+}
+.para::first-line{
+    text-transform: uppercase;
+}
+.para::first-letter{
+    font-size: 50px;
+}
+.content::before{
+    content: "";
+    background: #004c8e99;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+
+
+}
+.content::after{
+    content: "";
+    background: #004c8e99;
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    right: -50px;
+    bottom:-50px;
+    border-radius: 50%;
+
+}
+.icon{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.icon a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background: #147A00;
+    border-radius: 50%;
+    z-index: 9999;
+}
+
+   </style>
+</head>
+<body>
+    <h2><strong>Bài tập về position</strong></h2>
+    <p><strong>Yêu cầu: </strong>Code các box như dưới đây. Chú ý có cả bo góc cho các element.</p>
+    <div class="header">
+        <ul>
+            <li>Trang chủ</li>
+            <li>Giới thiệu</li>
+            <li>Sản phẩm</li>
+            <li>Tin tức</li>
+        </ul>
+    </div>
+    <div class="box">
+         <div class="child box-1">1</div>
+         <div class="child box-2">2</div>
+         <div class="child box-3">3</div>
+         <div class="child box-4">4</div>
+    </div>
+   
+    <div class="content">
+        <div class="para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, voluptates? Nisi debitis nulla, autem, impedit consequuntur cum adipisci eveniet, in numquam sed corrupti. Molestiae tenetur possimus perferendis repellendus excepturi saepe.
+        </div>
+    </div>
+
+    <div class="icon">
+        <a href="tel:01234669">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+</body>
+</html>

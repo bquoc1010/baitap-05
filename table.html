@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập về table</title>
+    <style>
+        
+          /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .table{
+            font-family: 'Roboto', sans-serif;
+        }
+        .table, tr, th, td{
+            border-spacing: 0;
+            
+        }
+        .table thead th{
+            background: #01987A;
+            color:#fff;
+        }
+        .table th, .table td{
+            padding: 10px 20px;
+            text-align: left;
+        }
+        .table td{
+            border-bottom: 1px solid #ddd;
+        } */
+        .table_1, tr, td{
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .table_1 .row_1{
+            background: orange;
+        }
+
+        .table_2 td{
+            border: 0;
+        }
+        .table_2 {
+            border:1px solid #ddd;
+        }
+        .table_2 .row_2{
+            font-weight: bold;
+            
+        }
+
+        .table_3, tr, td{
+            border-collapse: collapse;
+        }
+        .table_3 .row_3{
+            font-weight: bold;
+        }
+        .table_3 .row_3 .td_1{
+            text-align: center;
+            padding-top: 0;
+        }
+
+        .table_4, tr, td{
+            border-spacing: 0;
+        }
+        .table_4 .row_4{
+            font-weight: bold;
+        }
+        .table_4, td{ 
+            border-bottom: 0;
+        }
+       
+        
+        </style>
+</head>
+<body>
+    <!-- <h2><strong>Bài tập về table</strong></h2>
+    <p><strong>Yêu cầu: </strong> Code table như dưới đây, dùng font Roboto trên trang google font.</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Giới tính</th>
+                <th>Tuổi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lê Văn A</td>
+                <td>Nam</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lê Thị B</td>
+                <td>Nữ</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lê Văn C</td>
+                <td>Nam</td>
+                <td>26</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <table class="table_1">
+        <tbody>
+            <tr class="row_1">
+                <td>Hàng 1 cột 1</td>
+                <td>Hàng 1 cột 2</td>
+                <td>Hàng 1 cột 3</td>
+            </tr>
+            <tr>
+                <td>
+                    Hàng 2 cột 1
+                </td>
+                <td>Hàng 2 cột 2</td>
+                <td>Hàng 2 cột 3</td>
+            </tr>
+            <tr>
+                <td>Hàng 3 cột 1</td>
+                <td>Hàng 3 cột 2</td>
+                <td>Hàng 3 cột 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table class="table_2">
+        <tr class="row_2">
+            <td>Hàng 1 cột 1</td>
+            <td>Hàng 1 cột 2</td>
+            <td>Hàng 1 cột 3</td>
+        </tr>
+        <tr>
+            <td>Hàng 2 cột 1</td>
+            <td>Hàng 2 cột 2</td>
+            <td>Hàng 2 cột 3</td>
+        </tr>
+        <tr>
+            <td>Hàng 3 cột 1</td>
+            <td>Hàng 3 cột 2</td>
+            <td>Hàng 3 cột 3</td>
+        </tr>
+    </table>
+    <br>
+    <table class="table_3">
+        <tr class="row_3">
+            <td class="td_1">Hàng 1 cột 1</td>
+            <td>Hàng 1 cột 2</td>
+            <td>Hàng 1 cột 3</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed vel porro perferendis facere. Voluptatum ex odit deserunt praesentium. Saepe, impedit! Molestiae, quidem! Saepe, voluptatem alias facilis asperiores odit cupiditate suscipit?</td>
+            <td>Hàng 2 cột 2</td>
+            <td>Hàng 2 cột 3</td>
+        </tr>
+        <tr>
+            <td>Hàng 3 cột 1</td>
+            <td>Hàng 3 cột 2</td>
+            <td>Hàng 3 cột 3</td>
+        </tr>
+    </table>
+    <br>
+    <table class="table_4">
+        <tr class="row_4">
+            <td>Hàng 1 cột 1</td>
+            <td>Hàng 1 cột 2</td>
+            <td>Hàng 1 cột 3</td>
+        </tr>
+        <tr>
+            <td>Hàng 2 cột 1</td>
+            <td>Hàng 2 cột 2</td>
+            <td>Hàng 2 cột 3</td>
+        </tr>
+        <tr>
+            <td>Hàng 3 cột 1</td>
+            <td>Hàng 3 cột 2</td>
+            <td>Hàng 3 cột 3</td>
+        </tr>
+    </table>
+</body>
+</html>
